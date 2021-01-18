@@ -59,6 +59,11 @@ public class FrmMenu extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
+        tblEtudiants.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblEtudiantsMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(tblEtudiants);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -110,6 +115,15 @@ public class FrmMenu extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_formWindowOpened
+
+    private void tblEtudiantsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblEtudiantsMouseClicked
+        // TODO add your handling code here:
+        
+        
+        String choix = tblEtudiants.getValueAt(tblEtudiants.getSelectedRow(), 1).toString();
+        JOptionPane.showMessageDialog(this, choix);
+        
+    }//GEN-LAST:event_tblEtudiantsMouseClicked
 
     /**
      * @param args the command line arguments
