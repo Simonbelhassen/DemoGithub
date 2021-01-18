@@ -65,6 +65,8 @@ public class FrmMenu extends javax.swing.JFrame {
         int nb = 17;
         JOptionPane.showMessageDialog(this, "la valeur de nb = " + nb);
         
+        int i = 0;
+        JOptionPane.showMessageDialog(this, "la valeur de i = " + i);
         
         
         
