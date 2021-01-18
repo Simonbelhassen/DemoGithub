@@ -68,6 +68,7 @@ public class FrmMenu extends javax.swing.JFrame {
         int i = 0;
         JOptionPane.showMessageDialog(this, "la valeur de i = " + i);
         
+        int j = 12;
         
         
     }//GEN-LAST:event_btnDemoMouseClicked
